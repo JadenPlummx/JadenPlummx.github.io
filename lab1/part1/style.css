@@ -8,6 +8,8 @@ body {
 
 .sender-column {
   text-align: right;
+  width: 50%;
+  margin-left: auto;
 }
 
 h1 {
