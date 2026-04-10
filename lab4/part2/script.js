@@ -14,9 +14,23 @@ const images = [
 
 const baseURL = "images/";
 
+
 for (const image of images) {
   const newImage = document.createElement("img");
   newImage.src = `${baseURL}${image.filename}`;
   newImage.alt = image.alt;
+  // keyboard focus
+  newImage.tabIndex = "0";
+
   thumbBar.appendChild(newImage);
+
+  // click event
+  newImage.addEventListener("click", updateDisplayedImage);
+
+  // keyboard support
+  newImage.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      updateDisplayedImage(e);
+    }
+  });
 }
