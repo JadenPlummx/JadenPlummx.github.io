@@ -19,6 +19,9 @@ for (const image of images) {
   const newImage = document.createElement("img");
   newImage.src = `${baseURL}${image.filename}`;
   newImage.alt = image.alt;
+  
+  newImage.style.width = "100px";
+  
   // keyboard focus
   newImage.tabIndex = "0";
 
