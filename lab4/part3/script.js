@@ -57,25 +57,6 @@ class Ball {
   }
 }
 
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
-    this.color = color;
-    this.size = size;
-  }
-
-  draw() {
-    ...
-  }
-
-  update() {
-    ...
-  }
-}
-
 const balls = [];
 
 while (balls.length < 25) {
