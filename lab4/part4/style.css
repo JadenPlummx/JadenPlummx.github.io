@@ -28,6 +28,7 @@ p {
   position: absolute;
   top: 5px;
   left: 5px;
+  right: 5px;
   margin: 0;
   color: white;
 }
