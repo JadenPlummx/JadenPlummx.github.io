@@ -16,36 +16,68 @@ Webpage for Assignment 4 - Part 5 - JavaScript.
   <body>
     We want your feedback!
 
-    We're very excited that you visited the little house in the woods,
-    and we want to hear what you thought of it! Please fill in the below
-    sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.
+    <p>
+      We're very excited that you visited the little house in the woods,
+      and we want to hear what you thought of it! Please fill in the below
+      sections. You don't need to provide your name or contact details, but
+      if you do, we'll enter you into a prize draw where you'll have a chance
+      to win prizes.
+    </p>
 
-    --
+    <form>
 
-    Facilities
+      
+      <div class="form-section">
+        <h2>Facilities</h2>
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
+        <fieldset>
+          <legend>Was the porridge</legend>
 
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
+          <input type="radio" id="porridge1" name="porridge" value="hot" checked>
+          <label for="porridge1">Too hot?</label>
 
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi tec
-    Pretty
-    Majestic
+          <input type="radio" id="porridge2" name="porridge" value="cold">
+          <label for="porridge2">Too cold?</label>
 
-    --
+          <input type="radio" id="porridge3" name="porridge" value="right">
+          <label for="porridge3">Just right?</label>
+        </fieldset>
 
-    About your hosts
+        <fieldset>
+          <legend>Were the beds</legend>
+
+          <input type="radio" id="bed1" name="bed" value="hard" checked>
+          <label for="bed1">Too hard?</label>
+
+          <input type="radio" id="bed2" name="bed" value="soft">
+          <label for="bed2">Too soft?</label>
+
+          <input type="radio" id="bed3" name="bed" value="right">
+          <label for="bed3">Just right?</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Describe the chairs (select all you agree with)</legend>
+
+          <input type="checkbox" id="chair1" name="chair" value="comfy">
+          <label for="chair1">Comfy</label>
+
+          <input type="checkbox" id="chair2" name="chair" value="luxurious">
+          <label for="chair2">Luxurious</label>
+
+          <input type="checkbox" id="chair3" name="chair" value="hitec">
+          <label for="chair3">Hi tec</label>
+
+          <input type="checkbox" id="chair4" name="chair" value="pretty">
+          <label for="chair4">Pretty</label>
+
+          <input type="checkbox" id="chair5" name="chair" value="majestic">
+          <label for="chair5">Majestic</label>
+        </fieldset>
+
+      </div>
+
+
 
     Who's your favorite bear?
     Papa bear
@@ -61,13 +93,9 @@ Webpage for Assignment 4 - Part 5 - JavaScript.
 
     --
 
-    Any other feedback?
 
     Give us your comments
 
-    --
-
-    Your details
 
     Name
     Email
