@@ -7,6 +7,10 @@ Stylesheet for Assignment 5 - Web Accessibility.
 
 /* || General setup */
 
+main {
+  display: flex;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -265,4 +269,8 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+aside.secondary {
+  margin-left: 10px;
 }
